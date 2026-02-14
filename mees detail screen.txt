@@ -1,0 +1,27 @@
+Mess Detail Screen – Reference
+
+Location: mess_app/lib/features/user/presentation/pages/mess_detail_screen.dart
+
+Purpose: Full-screen detail view when user taps a mess card (from home or customer home).
+
+Data (from route arguments): Map<String, dynamic> with:
+- id, name, cuisine, rating, distance, availability, image, semanticLabel, price, deliveryTime, isVeg
+
+Layout:
+1. App bar: Back, title area, Share + Favorite actions
+2. Hero image: Full-width image, rounded bottom corners; overlays:
+   - Availability chip (Available / Limited Stock / Sold Out) – top right
+   - Veg / Veg+Non-Veg badge – top left
+3. Content (below image):
+   - Title (mess name) + rating chip (star + number)
+   - Cuisine line
+   - Info row: distance, delivery time, price (in a single rounded container)
+   - “About” section using semanticLabel as description
+   - Primary CTA: “Subscribe to this mess” (disabled with “Currently unavailable” when sold_out)
+
+Behavior:
+- Back button pops the route
+- Subscribe navigates to subscription screen (with mess as arguments when supported)
+- Availability colors: available = tertiary/green, limited = orange, sold_out = error/red
+
+Style: Uses app_export (theme, CustomIconWidget, CustomImageWidget), sizer (h, w), Material 3.
