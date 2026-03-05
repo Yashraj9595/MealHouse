@@ -10,10 +10,13 @@ exports.getMealGroups = async (req, res, next) => {
         const { mealType, category, date } = req.query;
 
         let query = {
-            mess: messId,
             isActive: true,
             validUntil: { $gte: new Date() }
         };
+
+        if (messId) {
+            query.mess = messId;
+        }
 
         if (mealType) {
             query.mealType = mealType;

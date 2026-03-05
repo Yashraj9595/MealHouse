@@ -32,10 +32,10 @@ const messValidation = [
 
 // Public routes
 router.get('/', getMesses);
+router.get('/my/mess', protect, authorize('mess_owner', 'admin'), getMyMess);
 router.get('/:id', getMess);
 
 // Protected routes
-router.get('/my/mess', protect, authorize('mess_owner', 'admin'), getMyMess);
 router.post('/', protect, authorize('mess_owner', 'admin'), messValidation, validate, createMess);
 router.put('/:id', protect, authorize('mess_owner', 'admin'), updateMess);
 router.delete('/:id', protect, authorize('mess_owner', 'admin'), deleteMess);

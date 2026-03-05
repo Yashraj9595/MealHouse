@@ -6,7 +6,9 @@ const {
     getOrder,
     updateOrderStatus,
     cancelOrder,
-    getOrderStats
+    getOrderStats,
+    createRazorpayOrder,
+    verifyRazorpayPayment
 } = require('../controllers/orderController');
 const { protect, authorize } = require('../middleware/auth');
 const validate = require('../middleware/validate');
@@ -33,7 +35,10 @@ router.use(protect);
 
 // Order routes
 router.post('/', orderValidation, validate, createOrder);
+router.post('/razorpay/create', createRazorpayOrder);
+router.post('/razorpay/verify', verifyRazorpayPayment);
 router.get('/', getOrders);
+router.get('/my/orders', getOrders);
 router.get('/stats/summary', authorize('mess_owner', 'admin'), getOrderStats);
 router.get('/:id', getOrder);
 router.put('/:id/status', authorize('mess_owner', 'admin'), statusValidation, validate, updateOrderStatus);
