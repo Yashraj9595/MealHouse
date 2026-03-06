@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ override: true });
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
@@ -50,7 +50,7 @@ app.use('/api/mealgroups', require('./routes/mealGroups'));
 app.use('/api/orders', require('./routes/orders'));
 
 // Health check route
-app.get('/health', (req, res) => {
+app.get('/api/health', (req, res) => {
     res.status(200).json({
         success: true,
         message: 'Server is running',

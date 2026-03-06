@@ -45,6 +45,19 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>fk408cssoog40csgo4s84k0k.194.238.18.123.sslip.io</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 	<!-- Permissions for camera and photo library -->
 	<key>NSCameraUsageDescription</key>
 	<string>We need access to your camera to take photos of meals and update your profile picture.</string>

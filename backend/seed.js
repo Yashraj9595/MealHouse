@@ -76,6 +76,64 @@ const seedDatabase = async () => {
         });
         console.log('✅ Created Regular User:', regularUser.email);
 
+        // Create Additional Users
+        const user2 = await User.create({
+            name: 'Amit Patel',
+            email: 'amit@user.com',
+            phone: '9876543213',
+            password: 'user123',
+            role: 'user',
+            address: {
+                street: '123, Nehru Nagar',
+                city: 'Mumbai',
+                state: 'Maharashtra',
+                pincode: '400069',
+                coordinates: {
+                    latitude: 19.0760,
+                    longitude: 72.8777
+                }
+            }
+        });
+        console.log('✅ Created User 2:', user2.email);
+
+        const user3 = await User.create({
+            name: 'Sneha Reddy',
+            email: 'sneha@user.com',
+            phone: '9876543214',
+            password: 'user123',
+            role: 'user',
+            address: {
+                street: '456, Shivaji Park',
+                city: 'Mumbai',
+                state: 'Maharashtra',
+                pincode: '400028',
+                coordinates: {
+                    latitude: 19.0180,
+                    longitude: 72.8420
+                }
+            }
+        });
+        console.log('✅ Created User 3:', user3.email);
+
+        const messOwner2 = await User.create({
+            name: 'Vijay Kumar',
+            email: 'vijay@messowner.com',
+            phone: '9876543215',
+            password: 'owner123',
+            role: 'mess_owner',
+            address: {
+                street: '789, Linking Road',
+                city: 'Mumbai',
+                state: 'Maharashtra',
+                pincode: '400052',
+                coordinates: {
+                    latitude: 19.0596,
+                    longitude: 72.8295
+                }
+            }
+        });
+        console.log('✅ Created Mess Owner 2:', messOwner2.email);
+
         // Create Mess 1: Annapurna Mess (Veg)
         const mess1 = await Mess.create({
             owner: messOwner._id,
@@ -183,6 +241,78 @@ const seedDatabase = async () => {
             isVerified: true
         });
         console.log('✅ Created Mess 3:', mess3.name);
+
+        // Create Mess 4: Punjabi Dhaba (Non-Veg)
+        const mess4 = await Mess.create({
+            owner: messOwner2._id,
+            name: 'Punjabi Dhaba',
+            description: 'Authentic Punjabi cuisine with rich, flavorful dishes. Famous for butter chicken and sarson ka saag.',
+            address: {
+                street: '23, SV Road',
+                area: 'Borivali West',
+                city: 'Mumbai',
+                state: 'Maharashtra',
+                pincode: '400092',
+                coordinates: {
+                    latitude: 19.2285,
+                    longitude: 72.8540
+                }
+            },
+            contact: {
+                phone: '9876543216',
+                email: 'punjabidhaba@mess.com',
+                whatsapp: '9876543216'
+            },
+            mealType: 'non-veg',
+            openingHours: {
+                breakfast: { start: '07:00', end: '11:00' },
+                lunch: { start: '12:00', end: '16:00' },
+                dinner: { start: '19:00', end: '23:30' }
+            },
+            rating: {
+                average: 4.6,
+                count: 180
+            },
+            isActive: true,
+            isVerified: true
+        });
+        console.log('✅ Created Mess 4:', mess4.name);
+
+        // Create Mess 5: Chinese Wok (Veg)
+        const mess5 = await Mess.create({
+            owner: messOwner2._id,
+            name: 'Chinese Wok',
+            description: 'Delicious Indo-Chinese vegetarian dishes. Fresh ingredients and authentic flavors.',
+            address: {
+                street: '56, Hill Road',
+                area: 'Bandra West',
+                city: 'Mumbai',
+                state: 'Maharashtra',
+                pincode: '400050',
+                coordinates: {
+                    latitude: 19.0596,
+                    longitude: 72.8295
+                }
+            },
+            contact: {
+                phone: '9876543217',
+                email: 'chinesewok@mess.com',
+                whatsapp: '9876543217'
+            },
+            mealType: 'veg',
+            openingHours: {
+                breakfast: { start: '08:00', end: '11:00' },
+                lunch: { start: '12:00', end: '15:00' },
+                dinner: { start: '19:00', end: '22:00' }
+            },
+            rating: {
+                average: 4.4,
+                count: 95
+            },
+            isActive: true,
+            isVerified: true
+        });
+        console.log('✅ Created Mess 5:', mess5.name);
 
         // Create Meal Groups for Mess 1 (Annapurna - Veg)
         const mess1Meals = await MealGroup.insertMany([
@@ -363,17 +493,143 @@ const seedDatabase = async () => {
         ]);
         console.log(`✅ Created ${mess3Meals.length} meals for ${mess3.name}`);
 
+        // Create Meal Groups for Mess 4 (Punjabi Dhaba - Non-Veg)
+        const mess4Meals = await MealGroup.insertMany([
+            {
+                mess: mess4._id,
+                name: 'Paratha Breakfast',
+                description: 'Flaky butter parathas with curd',
+                mealType: 'breakfast',
+                category: 'veg',
+                items: [
+                    { name: 'Aloo Paratha', quantity: '2 pieces' },
+                    { name: 'Butter', quantity: '2 cubes' },
+                    { name: 'Curd', quantity: '1 bowl' },
+                    { name: 'Pickle', quantity: '1 portion' }
+                ],
+                price: 70,
+                totalTiffins: 40,
+                availableTiffins: 40,
+                validUntil: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                isActive: true
+            },
+            {
+                mess: mess4._id,
+                name: 'Butter Chicken Special',
+                description: 'Creamy butter chicken with naan',
+                mealType: 'lunch',
+                category: 'non-veg',
+                items: [
+                    { name: 'Butter Chicken', quantity: '1 bowl' },
+                    { name: 'Naan', quantity: '4 pieces' },
+                    { name: 'Rice', quantity: '1 plate' },
+                    { name: 'Salad', quantity: '1 bowl' },
+                    { name: 'Raita', quantity: '1 bowl' }
+                ],
+                price: 250,
+                totalTiffins: 60,
+                availableTiffins: 60,
+                validUntil: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                isActive: true
+            },
+            {
+                mess: mess4._id,
+                name: 'Sarson ka Saag Combo',
+                description: 'Traditional Punjabi dish with makki roti',
+                mealType: 'dinner',
+                category: 'veg',
+                items: [
+                    { name: 'Sarson ka Saag', quantity: '1 bowl' },
+                    { name: 'Makki Roti', quantity: '3 pieces' },
+                    { name: 'Butter', quantity: '2 cubes' },
+                    { name: 'Jaggery', quantity: '1 piece' }
+                ],
+                price: 180,
+                totalTiffins: 35,
+                availableTiffins: 35,
+                validUntil: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                isActive: true
+            }
+        ]);
+        console.log(`✅ Created ${mess4Meals.length} meals for ${mess4.name}`);
+
+        // Create Meal Groups for Mess 5 (Chinese Wok - Veg)
+        const mess5Meals = await MealGroup.insertMany([
+            {
+                mess: mess5._id,
+                name: 'Noodle Soup Breakfast',
+                description: 'Warm noodle soup to start your day',
+                mealType: 'breakfast',
+                category: 'veg',
+                items: [
+                    { name: 'Veg Noodle Soup', quantity: '1 bowl' },
+                    { name: 'Spring Roll', quantity: '2 pieces' },
+                    { name: 'Green Tea', quantity: '1 cup' }
+                ],
+                price: 85,
+                totalTiffins: 30,
+                availableTiffins: 30,
+                validUntil: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                isActive: true
+            },
+            {
+                mess: mess5._id,
+                name: 'Chowmein Combo',
+                description: 'Spicy vegetable chowmein with manchurian',
+                mealType: 'lunch',
+                category: 'veg',
+                items: [
+                    { name: 'Veg Chowmein', quantity: '1 full plate' },
+                    { name: 'Gobi Manchurian', quantity: '6 pieces' },
+                    { name: 'Chilli Sauce', quantity: '1 sachet' },
+                    { name: 'Soft Drink', quantity: '1 can' }
+                ],
+                price: 140,
+                totalTiffins: 50,
+                availableTiffins: 50,
+                validUntil: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                isActive: true
+            },
+            {
+                mess: mess5._id,
+                name: 'Fried Rice Special',
+                description: 'Sizzling fried rice with honey chili potato',
+                mealType: 'dinner',
+                category: 'veg',
+                items: [
+                    { name: 'Veg Fried Rice', quantity: '1 full plate' },
+                    { name: 'Honey Chili Potato', quantity: '1 plate' },
+                    { name: 'Hot & Sour Soup', quantity: '1 bowl' },
+                    { name: 'Ice Cream', quantity: '1 scoop' }
+                ],
+                price: 160,
+                totalTiffins: 40,
+                availableTiffins: 40,
+                validUntil: new Date(Date.now() + 24 * 60 * 60 * 1000),
+                isActive: true
+            }
+        ]);
+        console.log(`✅ Created ${mess5Meals.length} meals for ${mess5.name}`);
+
         console.log('\n🎉 Database seeded successfully!\n');
         console.log('📋 Summary:');
         console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
         console.log('👥 Users Created:');
         console.log(`   • Admin: ${admin.email} / admin123`);
         console.log(`   • Mess Owner: ${messOwner.email} / owner123`);
+        console.log(`   • Mess Owner 2: ${messOwner2.email} / owner123`);
         console.log(`   • Regular User: ${regularUser.email} / user123`);
+        console.log(`   • User 2: ${user2.email} / user123`);
+        console.log(`   • User 3: ${user3.email} / user123`);
         console.log('\n🏪 Messes Created:');
         console.log(`   • ${mess1.name} (Veg) - ${mess1Meals.length} meals`);
         console.log(`   • ${mess2.name} (Both) - ${mess2Meals.length} meals`);
         console.log(`   • ${mess3.name} (Non-Veg) - ${mess3Meals.length} meals`);
+        console.log(`   • ${mess4.name} (Non-Veg) - ${mess4Meals.length} meals`);
+        console.log(`   • ${mess5.name} (Veg) - ${mess5Meals.length} meals`);
+        console.log('\n👥 Total Users: 6 (1 Admin, 2 Mess Owners, 3 Regular Users)');
+        console.log('🏪 Total Messes: 5');
+        console.log('🍽️  Total Meal Groups: 15');
         console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
         process.exit(0);

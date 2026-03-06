@@ -32,9 +32,23 @@ class ApiTest {
           receiveTimeout: const Duration(seconds: 10),
         ),
       );
+
+      final raw = messesResponse.data;
+      int count = 0;
+
+      if (raw is List) {
+        count = raw.length;
+      } else if (raw is Map<String, dynamic>) {
+        final inner = raw['data'] ?? raw['messes'] ?? raw['items'];
+        if (inner is List) {
+          count = inner.length;
+        } else if (inner != null) {
+          count = 1;
+        }
+      }
       
       print('✅ Messes endpoint successful!');
-      print('📊 Found ${messesResponse.data['data']?.length ?? 0} messes');
+      print('📊 Found $count messes');
       
       print('\n🎉 API connection is working perfectly!');
       print('📱 Your Flutter app should load real data now');

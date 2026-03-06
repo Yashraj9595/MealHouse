@@ -29,11 +29,11 @@ class Environment {
         if (!kIsWeb) {
           if (defaultTargetPlatform == TargetPlatform.android) {
             // For physical devices, use your laptop's IP address
-            // This IP was detected automatically: 10.87.156.74
-            baseUrl = 'http://10.87.156.74:5001/api'; // Physical device USB/WiFi
+            // Replace with your actual IP if testing on physical device
+            baseUrl = 'http://10.0.2.2:5000/api'; // Android emulator
             
-            // If you're using Android emulator, uncomment this line:
-            // baseUrl = 'http://10.0.2.2:5000/api'; // Android emulator only
+            // If testing on physical device, use your laptop's IP:
+            // baseUrl = 'http://YOUR_LAPTOP_IP:5000/api';
           }
         }
         
@@ -45,7 +45,7 @@ class Environment {
         break;
       case AppEnvironment.prod:
         config = EnvConfig(
-          baseUrl: 'https://api.messapp.com/api',
+          baseUrl: 'http://fk408cssoog40csgo4s84k0k.194.238.18.123.sslip.io/api',
           apiKey: 'prod_key',
           environment: AppEnvironment.prod,
         );

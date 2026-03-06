@@ -15,6 +15,7 @@ class CustomIconWidget extends StatelessWidget {
   IconData _getIconData(String name) {
     switch (name) {
       case 'location_on': return Icons.location_on_rounded;
+      case 'local_fire_department': return Icons.local_fire_department_rounded;
       case 'keyboard_arrow_down': return Icons.keyboard_arrow_down_rounded;
       case 'search': return Icons.search_rounded;
       case 'tune': return Icons.tune_rounded;
@@ -78,10 +79,19 @@ class CustomIconWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      _getIconData(iconName),
-      color: color,
-      size: size,
-    );
+    try {
+      return Icon(
+        _getIconData(iconName),
+        color: color,
+        size: size,
+      );
+    } catch (e) {
+      // Fallback icon if icon not found
+      return Icon(
+        Icons.error_outline,
+        color: color ?? Colors.grey,
+        size: size ?? 24,
+      );
+    }
   }
 }

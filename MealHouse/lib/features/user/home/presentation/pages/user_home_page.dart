@@ -79,44 +79,70 @@ class _UserHomePageState extends State<UserHomePage> with TickerProviderStateMix
       // Debug: Print the API URL being used
       print('🔍 Loading messes from: ${Environment.config.baseUrl}/messes');
 
-      // Don't load mock data immediately - let loading state show
+      // Call backend (10s timeout)
       final response = await _apiClient.get(ApiConstants.messes).timeout(
         const Duration(seconds: 10),
         onTimeout: () => throw TimeoutException('API timeout after 10 seconds'),
       );
-      
+
       print('✅ API Response Status: ${response.statusCode}');
-      print('✅ API Response Data: ${response.data}');
-      
-      if (response.statusCode == 200) {
-         final baseResponse = response.toBaseResponse<Map<String, dynamic>>();
-         
-         if (baseResponse.success) {
-           final messesData = baseResponse.getListData((json) => MessModel.fromJson(json));
-           
-           if (messesData.isNotEmpty) {
-             if (mounted) {
-               setState(() {
-                 _messData = messesData;
-                 _error = null;
-               });
-             }
-             print('✅ Successfully loaded ${messesData.length} messes');
-           } else {
-             // No data from API, use mock data
-             if (mounted) {
-               setState(() {
-                 _messData = _getMockData();
-                 _error = null;
-               });
-             }
-             print('⚠️ No data from API, using mock data');
-           }
-         } else {
-           throw Exception(baseResponse.message);
-         }
-      } else {
+      print('✅ Raw API Response Data runtimeType: ${response.data.runtimeType}');
+
+      if (response.statusCode != 200) {
         throw Exception('API returned status ${response.statusCode}');
+      }
+
+      // Support both shapes:
+      // 1) { success, message, data: [...] }
+      // 2) [ {...}, {...} ]
+      final raw = response.data;
+      dynamic inner;
+
+      if (raw is Map<String, dynamic>) {
+        inner = raw['data'] ?? raw['messes'] ?? raw['items'];
+        // If backend already returns a list at top-level "data"
+        // or under an alternative key, use that; otherwise fall back.
+        inner ??= raw;
+      } else {
+        inner = raw;
+      }
+
+      List<dynamic> list;
+      if (inner is List) {
+        list = inner;
+      } else {
+        // If backend returned a single object, wrap it into a list.
+        list = inner != null ? [inner] : <dynamic>[];
+      }
+
+      final List<MessModel> messesData = [];
+
+      for (final item in list) {
+        if (item is Map<String, dynamic>) {
+          try {
+            messesData.add(MessModel.fromJson(item));
+          } catch (e) {
+            // Skip bad items but don't fail the whole response.
+            print('⚠️ Skipping invalid mess item: $e');
+          }
+        } else {
+          print('⚠️ Unexpected mess item type: ${item.runtimeType}');
+        }
+      }
+
+      if (mounted) {
+        setState(() {
+          if (messesData.isNotEmpty) {
+            _messData = messesData;
+            _error = null;
+            print('✅ Successfully loaded ${messesData.length} messes from backend');
+          } else {
+            // No valid backend data, fall back to mock list
+            _messData = _getMockData();
+            _error = 'No data received from backend. Showing offline data.';
+            print('⚠️ No data from backend, using mock data');
+          }
+        });
       }
     } on SocketException catch (e) {
       print('Network error: $e');

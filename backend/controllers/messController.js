@@ -40,7 +40,21 @@ exports.getMesses = async (req, res, next) => {
 
         const messes = await Mess.find(query)
             .populate('owner', 'name email phone')
-            .sort('-createdAt');
+            .sort('-createdAt')
+            .lean(); // Use lean() for better performance and to get plain objects
+
+        // Ensure numeric fields are numbers, not strings
+        messes.forEach(mess => {
+            if (mess.rating) {
+                mess.rating.average = Number(mess.rating.average);
+                mess.rating.count = Number(mess.rating.count);
+            }
+            mess.totalOrders = Number(mess.totalOrders);
+            if (mess.address.coordinates) {
+                mess.address.coordinates.latitude = Number(mess.address.coordinates.latitude);
+                mess.address.coordinates.longitude = Number(mess.address.coordinates.longitude);
+            }
+        });
 
         res.status(200).json({
             success: true,

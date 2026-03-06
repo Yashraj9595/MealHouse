@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:MealHouse/app.dart';
 import 'package:MealHouse/core/config/env_config.dart';
@@ -10,8 +11,8 @@ void main() async {
   // Initialize DI
   await initInjection();
   
-  // Initialize with Dev environment by default
-  Environment.init(AppEnvironment.dev);
+  // Initialize environment
+  Environment.init(kReleaseMode ? AppEnvironment.prod : AppEnvironment.dev);
   
   runApp(
     const ProviderScope(

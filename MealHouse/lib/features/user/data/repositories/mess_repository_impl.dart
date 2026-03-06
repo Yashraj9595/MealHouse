@@ -22,13 +22,31 @@ class MessRepositoryImpl implements MessRepository {
 
       final response = await _dioClient.get('/messes', queryParameters: queryParams);
 
-      if (response.data['success'] == true) {
-        return (response.data['data'] as List)
-            .map((mess) => MessModel.fromJson(mess))
-            .toList();
+      final raw = response.data;
+      dynamic inner;
+
+      if (raw is Map<String, dynamic>) {
+        if (raw['success'] == false) {
+          throw Exception(raw['message'] ?? 'Failed to load messes');
+        }
+        inner = raw['data'] ?? raw['messes'] ?? raw['items'] ?? raw;
       } else {
-        throw Exception(response.data['message'] ?? 'Failed to load messes');
+        inner = raw;
       }
+
+      List<dynamic> list;
+      if (inner is List) {
+        list = inner;
+      } else if (inner != null) {
+        list = [inner];
+      } else {
+        list = <dynamic>[];
+      }
+
+      return list
+          .whereType<Map<String, dynamic>>()
+          .map((mess) => MessModel.fromJson(mess))
+          .toList();
     } catch (e) {
       rethrow;
     }
@@ -39,11 +57,22 @@ class MessRepositoryImpl implements MessRepository {
     try {
       final response = await _dioClient.get('/messes/$id');
 
-      if (response.data['success'] == true) {
-        return MessModel.fromJson(response.data['data']);
-      } else {
-        throw Exception(response.data['message'] ?? 'Failed to load mess details');
+      final raw = response.data;
+
+      if (raw is Map<String, dynamic>) {
+        if (raw['success'] == false) {
+          throw Exception(raw['message'] ?? 'Failed to load mess details');
+        }
+        final inner = raw['data'] ?? raw['mess'] ?? raw;
+        if (inner is Map<String, dynamic>) {
+          return MessModel.fromJson(inner);
+        }
+      } else if (raw is List && raw.isNotEmpty && raw.first is Map<String, dynamic>) {
+        // Some APIs return a list even for detail endpoints; use the first item.
+        return MessModel.fromJson(raw.first as Map<String, dynamic>);
       }
+
+      throw Exception('Failed to load mess details: unexpected response format');
     } catch (e) {
       rethrow;
     }
@@ -53,13 +82,25 @@ class MessRepositoryImpl implements MessRepository {
   Future<List<UserMealGroupModel>> getFeaturedMeals() async {
     try {
       final response = await _dioClient.get('/mealgroups');
-      if (response.data['success'] == true) {
-        return (response.data['data'] as List)
-            .map((json) => UserMealGroupModel.fromJson(json))
-            .toList();
+
+      final raw = response.data;
+      dynamic inner;
+
+      if (raw is Map<String, dynamic>) {
+        if (raw['success'] == false) {
+          throw Exception(raw['message'] ?? 'Failed to load featured meals');
+        }
+        inner = raw['data'] ?? raw['meals'] ?? raw['items'] ?? raw;
       } else {
-        throw Exception(response.data['message'] ?? 'Failed to load featured meals');
+        inner = raw;
       }
+
+      final list = inner is List ? inner : (inner != null ? [inner] : <dynamic>[]);
+
+      return list
+          .whereType<Map<String, dynamic>>()
+          .map((json) => UserMealGroupModel.fromJson(json))
+          .toList();
     } catch (e) {
       rethrow;
     }

@@ -162,13 +162,14 @@ class MessCardWidget extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Expanded(
+                                flex: 2,
                                 child: Text(
                                   messModel.name,
-                                  style: theme.textTheme.titleMedium?.copyWith(
+                                  style: theme.textTheme.titleSmall?.copyWith(
                                     fontWeight: FontWeight.w700,
                                     color: theme.colorScheme.onSurface,
                                   ),
-                                  maxLines: 1,
+                                  maxLines: 2,
                                   overflow: TextOverflow.ellipsis,
                                 ),
                               ),
@@ -212,6 +213,7 @@ class MessCardWidget extends StatelessWidget {
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: theme.colorScheme.onSurfaceVariant,
                               fontWeight: FontWeight.w500,
+                              fontSize: 10.sp,
                             ),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
@@ -240,9 +242,10 @@ class MessCardWidget extends StatelessWidget {
                                 Expanded(
                                   child: Text(
                                     messModel.distance,
-                                    style: theme.textTheme.labelSmall?.copyWith(
+                                    style: theme.textTheme.bodySmall?.copyWith(
                                       color: theme.colorScheme.onSurfaceVariant,
                                       fontWeight: FontWeight.w500,
+                                      fontSize: 10.sp,
                                     ),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
@@ -253,8 +256,8 @@ class MessCardWidget extends StatelessWidget {
                           ),
                           Container(
                             padding: EdgeInsets.symmetric(
-                              horizontal: 2.w,
-                              vertical: 0.5.h,
+                              horizontal: 1.w,
+                              vertical: 0.3.h,
                             ),
                             decoration: BoxDecoration(
                               color: theme.colorScheme.primaryContainer,
@@ -265,7 +268,10 @@ class MessCardWidget extends StatelessWidget {
                               style: theme.textTheme.labelSmall?.copyWith(
                                 color: theme.colorScheme.primary,
                                 fontWeight: FontWeight.w700,
+                                fontSize: 11.sp,
                               ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                             ),
                           ),
                         ],
