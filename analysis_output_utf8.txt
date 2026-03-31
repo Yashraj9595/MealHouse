@@ -1,0 +1,61 @@
+﻿Analyzing order...                                              
+
+  error - Target of URI doesn't exist: '../domain/entities/order_status.dart' - lib\features\order\data\models\order_model.dart:1:8 - uri_does_not_exist
+  error - Undefined class 'OrderStatus' - lib\features\order\data\models\order_model.dart:12:9 - undefined_class
+  error - Undefined class 'OrderStatus' - lib\features\order\data\models\order_model.dart:68:10 - undefined_class
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:71:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:73:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:75:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:77:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:79:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:81:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:83:16 - undefined_identifier
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:463:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:548:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:600:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:654:26 - unnecessary_underscores
+  error - Invalid constant value - lib\features\order\presentation\screens\order_history\order_history_screen.dart:99:51 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\screens\order_history\order_history_screen.dart:112:49 - invalid_constant
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\order_history\order_history_screen.dart:305:40 - undefined_getter
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\order_history\order_history_screen.dart:317:42 - undefined_getter
+  error - Invalid constant value - lib\features\order\presentation\screens\order_history\order_history_screen.dart:400:32 - invalid_constant
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\order_history\order_history_screen.dart:453:47 - undefined_getter
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\order_meal\order_meal_screen.dart:233:33 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\order_meal\order_meal_screen.dart:233:37 - unnecessary_underscores
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:421:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:422:23 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:528:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:529:15 - deprecated_member_use
+   info - Statements in a while should be enclosed in a block - lib\features\order\presentation\screens\skip_meal\skip_meal_screen.dart:293:34 - curly_braces_in_flow_control_structures
+  error - Invalid constant value - lib\features\order\presentation\screens\track_order\track_order_screen.dart:63:20 - invalid_constant
+warning - The value of the local variable 'dotColor' isn't used - lib\features\order\presentation\screens\track_order\track_order_screen.dart:254:11 - unused_local_variable
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:56:51 - invalid_constant
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:129:33 - undefined_getter
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:196:30 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:303:34 - invalid_constant
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:411:29 - undefined_getter
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:525:28 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:620:56 - invalid_constant
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:700:40 - undefined_getter
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:712:42 - undefined_getter
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\active_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_ActiveOrderCardWidgetState' - lib\features\order\presentation\widgets\active_order_card_widget.dart:113:101 - undefined_method
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\active_order_card_widget.dart:292:29 - undefined_getter
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\cancelled_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_CancelledOrderCardWidgetState' - lib\features\order\presentation\widgets\cancelled_order_card_widget.dart:160:100 - undefined_method
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\completed_order_card_widget.dart:6:8 - unused_import
+  error - Invalid constant value - lib\features\order\presentation\widgets\completed_order_card_widget.dart:157:38 - invalid_constant
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\completed_order_card_widget.dart:183:39 - undefined_getter
+  error - Invalid constant value - lib\features\order\presentation\widgets\orders_app_bar_widget.dart:215:26 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\widgets\orders_app_bar_widget.dart:249:61 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\widgets\orders_app_bar_widget.dart:280:24 - invalid_constant
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\orders_bottom_nav_widget.dart:152:34 - undefined_getter
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\orders_bottom_nav_widget.dart:165:34 - undefined_getter
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\recently_completed_section_widget.dart:6:8 - unused_import
+  error - Invalid constant value - lib\features\order\presentation\widgets\recently_completed_section_widget.dart:176:26 - invalid_constant
+  error - The getter 'successLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\recently_completed_section_widget.dart:176:35 - undefined_getter
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_UpcomingOrderCardWidgetState' - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:104:104 - undefined_method
+  error - Invalid constant value - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:143:40 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:193:32 - invalid_constant
+

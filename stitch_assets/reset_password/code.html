@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                        "charcoal": "#2D2D2D",
+                        "cream-soft": "#F2EFE9"
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Reset Password</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-start overflow-x-hidden">
+<div class="w-full max-w-md px-6 py-8">
+<header class="flex items-center mb-10">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 text-charcoal dark:text-slate-100 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+</header>
+<main class="space-y-8">
+<div class="space-y-3">
+<h1 class="text-charcoal dark:text-slate-100 text-4xl font-bold tracking-tight">
+                        Reset Password
+                    </h1>
+<p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+                        Your new password must be different from previously used passwords to maintain your account security.
+                    </p>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-charcoal dark:text-slate-200 ml-1">
+                            New Password
+                        </label>
+<div class="relative flex items-center group">
+<input class="w-full h-14 px-4 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-charcoal dark:text-slate-100 placeholder:text-slate-400" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 text-slate-400 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-charcoal dark:text-slate-200 ml-1">
+                            Confirm Password
+                        </label>
+<div class="relative flex items-center group">
+<input class="w-full h-14 px-4 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-charcoal dark:text-slate-100 placeholder:text-slate-400" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 text-slate-400 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full h-14 bg-charcoal dark:bg-primary text-white font-bold rounded-xl shadow-lg shadow-charcoal/10 dark:shadow-primary/20 hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="submit">
+                            Reset Password
+                        </button>
+</div>
+</form>
+<div class="pt-8 flex flex-col items-center gap-4">
+<div class="w-12 h-1 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+<div class="text-center">
+<p class="text-slate-500 dark:text-slate-400 text-sm">
+                            Need help? <a class="text-primary font-semibold hover:underline decoration-2 underline-offset-4" href="#">Contact Support</a>
+</p>
+</div>
+</div>
+</main>
+</div>
+<div class="fixed bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-20"></div>
+</div>
+</body></html>

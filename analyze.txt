@@ -1,0 +1,70 @@
+﻿Analyzing meal_house...                                         
+
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:140:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:142:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:144:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:146:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:148:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:150:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:152:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:154:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:156:12 - type_literal_in_constant_pattern
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:42:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:44:13 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:53:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:54:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:61:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:62:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:64:13 - avoid_print
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor or activeTrackColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\admin\presentation\screens\pickup_points\add_pickup_point_screen.dart:521:15 - deprecated_member_use
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor or activeTrackColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\admin\presentation\screens\pickup_points\add_pickup_point_screen.dart:732:13 - deprecated_member_use
+warning - The value of the local variable 'startTime' isn't used - lib\features\admin\presentation\screens\pickup_points\pickup_points_screen.dart:231:18 - unused_local_variable
+warning - The value of the local variable 'endTime' isn't used - lib\features\admin\presentation\screens\pickup_points\pickup_points_screen.dart:232:18 - unused_local_variable
+warning - The value of the local variable 'capacity' isn't used - lib\features\admin\presentation\screens\pickup_points\pickup_points_screen.dart:233:15 - unused_local_variable
+warning - The operand can't be 'null', so the condition is always 'true' - lib\features\auth\data\services\auth_service.dart:231:34 - unnecessary_null_comparison
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:73:41 - deprecated_member_use
+   info - 'scale' is deprecated and shouldn't be used. Use scaleByVector3, scaleByVector4, or scaleByDouble instead - lib\features\location\location_selection_screen\widgets\location_suggestions_widget.dart:174:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\location\location_selection_screen\widgets\location_suggestions_widget.dart:187:35 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\mess_owner\presentation\screens\menu\add_menu_item_screen\add_menu_item_screen.dart:86:44 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\mess_owner\presentation\screens\menu\add_menu_item_screen\add_menu_item_screen.dart:99:44 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\mess_owner\presentation\screens\menu\todays_menu_screen\todays_menu_screen.dart:34:48 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\mess_owner\presentation\screens\menu\todays_menu_screen\todays_menu_screen.dart:35:47 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\mess_owner\presentation\screens\menu\todays_menu_screen\todays_menu_screen.dart:36:46 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\mess_owner\presentation\screens\menu\todays_menu_screen\todays_menu_screen.dart:136:48 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\mess_owner\presentation\screens\menu\todays_menu_screen\todays_menu_screen.dart:137:47 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\mess_owner\presentation\screens\menu\todays_menu_screen\todays_menu_screen.dart:138:46 - curly_braces_in_flow_control_structures
+warning - The value of the field '_bgColor' isn't used - lib\features\mess_owner\presentation\screens\mess_profile\mess_location_screen\mess_location_screen.dart:24:22 - unused_field
+   info - Don't use 'BuildContext's across async gaps - lib\features\mess_owner\presentation\screens\mess_profile\upload_mess_photos_screen\upload_mess_photos_screen.dart:174:33 - use_build_context_synchronously
+   info - Unnecessary instance of 'Container' - lib\features\mess_owner\presentation\screens\mess_profile\upload_mess_photos_screen\upload_mess_photos_screen.dart:438:20 - avoid_unnecessary_containers
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\mess_owner\presentation\screens\profile\profile_screen.dart:599:30 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\notifications_screen\widgets\notification_card_widget.dart:73:37 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:421:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:422:23 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:528:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:529:15 - deprecated_member_use
+warning - The value of the local variable 'dotColor' isn't used - lib\features\order\presentation\screens\track_order\track_order_screen.dart:254:11 - unused_local_variable
+warning - The value of the field '_inactiveColor' isn't used - lib\features\profile\presentation\screens\profile_screen\profile_screen.dart:14:16 - unused_field
+warning - The declaration '_onNavTap' isn't referenced - lib\features\profile\presentation\screens\profile_screen\profile_screen.dart:17:8 - unused_element
+  error - Undefined name 'GoogleFonts' - lib\features\user\home_screen\home_screen\home_screen.dart:136:36 - undefined_identifier
+  error - Undefined name 'GoogleFonts' - lib\features\user\home_screen\home_screen\home_screen.dart:152:32 - undefined_identifier
+warning - The value of the field '_mapBgLight' isn't used - lib\features\user\home_screen\mess_near_you_screen\mess_near_you_screen.dart:25:22 - unused_field
+warning - The value of the field '_navItems' isn't used - lib\features\user\home_screen\recommended_for_you_screen\recommended_for_you_screen.dart:90:43 - unused_field
+warning - The declaration '_formatTime' isn't referenced - lib\features\user\mess_details\restaurant_detail_screen\widgets\info_cards_widget.dart:12:10 - unused_element
+   info - Don't invoke 'print' in production code - scripts\consolidate_remaining.dart:23:13 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\feature_fixer.dart:39:7 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\final_cleanup.dart:13:5 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\final_cleanup.dart:29:5 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\final_cleanup.dart:46:5 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\final_cleanup.dart:83:9 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\final_cleanup.dart:101:5 - avoid_print
+warning - Dead code - scripts\fix_remaining_imports.dart:22:20 - dead_code
+   info - Don't invoke 'print' in production code - scripts\fix_remaining_imports.dart:24:9 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\fix_status_type.dart:13:5 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\fix_status_type.dart:24:5 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\global_fixer.dart:80:7 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\global_fixer.dart:93:9 - avoid_print
+  error - Undefined name 'utf16' - scripts\read_final_analysis.dart:10:15 - undefined_identifier
+   info - Don't invoke 'print' in production code - scripts\read_final_analysis.dart:16:3 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\read_final_analysis.dart:18:5 - avoid_print
+   info - Don't invoke 'print' in production code - scripts\update_remaining_routes.dart:47:3 - avoid_print
+

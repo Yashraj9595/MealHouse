@@ -1,0 +1,143 @@
+﻿Analyzing 3 items...                                            
+
+warning - Unused import: 'package:meal_house/core/constants/app_constants.dart' - lib\features\auth\data\services\auth_service.dart:4:8 - unused_import
+warning - The operand can't be 'null', so the condition is always 'true' - lib\features\auth\data\services\auth_service.dart:227:34 - unnecessary_null_comparison
+  error - Target of URI doesn't exist: '../../../../shared/api/api_client.dart' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../../../shared/theme/app_theme.dart' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/services/auth_service.dart' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'otp_screen.dart' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:5:8 - uri_does_not_exist
+  error - The method 'AuthService' isn't defined for the type '_ForgotPasswordScreenState' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:16:24 - undefined_method
+  error - The method 'ApiClient' isn't defined for the type '_ForgotPasswordScreenState' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:16:36 - undefined_method
+  error - The method 'OTPScreen' isn't defined for the type '_ForgotPasswordScreenState' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:39:35 - undefined_method
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:61:24 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:69:24 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:74:41 - deprecated_member_use
+  error - Invalid constant value - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:100:38 - invalid_constant
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:100:38 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\forgot_password\forgot_password_screen.dart:126:36 - undefined_identifier
+  error - Target of URI doesn't exist: '../../../../shared/api/api_client.dart' - lib\features\auth\presentation\screens\login\login_screen.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../../../shared/theme/app_theme.dart' - lib\features\auth\presentation\screens\login\login_screen.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../data/services/auth_service.dart' - lib\features\auth\presentation\screens\login\login_screen.dart:4:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'registration_screen.dart' - lib\features\auth\presentation\screens\login\login_screen.dart:5:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'forgot_password_screen.dart' - lib\features\auth\presentation\screens\login\login_screen.dart:6:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'welcome_screen.dart' - lib\features\auth\presentation\screens\login\login_screen.dart:7:8 - uri_does_not_exist
+  error - The method 'AuthService' isn't defined for the type '_LoginScreenState' - lib\features\auth\presentation\screens\login\login_screen.dart:19:24 - undefined_method
+  error - The method 'ApiClient' isn't defined for the type '_LoginScreenState' - lib\features\auth\presentation\screens\login\login_screen.dart:19:36 - undefined_method
+  error - The name 'WelcomeScreen' isn't a class - lib\features\auth\presentation\screens\login\login_screen.dart:44:57 - creation_with_non_type
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\login\login_screen.dart:66:24 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\login\login_screen.dart:74:24 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\login\login_screen.dart:79:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\login\login_screen.dart:97:59 - deprecated_member_use
+  error - Invalid constant value - lib\features\auth\presentation\screens\login\login_screen.dart:108:38 - invalid_constant
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\login\login_screen.dart:108:38 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\login\login_screen.dart:134:36 - undefined_identifier
+  error - Invalid constant value - lib\features\auth\presentation\screens\login\login_screen.dart:154:36 - invalid_constant
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\login\login_screen.dart:154:36 - undefined_identifier
+  error - Invalid constant value - lib\features\auth\presentation\screens\login\login_screen.dart:173:40 - invalid_constant
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\login\login_screen.dart:173:40 - undefined_identifier
+  error - The name 'ForgotPasswordScreen' isn't a class - lib\features\auth\presentation\screens\login\login_screen.dart:181:65 - creation_with_non_type
+  error - The name 'RegistrationScreen' isn't a class - lib\features\auth\presentation\screens\login\login_screen.dart:296:61 - creation_with_non_type
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\login\login_screen.dart:326:29 - undefined_identifier
+  error - Invalid constant value - lib\features\auth\presentation\screens\login\login_screen.dart:328:53 - invalid_constant
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\login\login_screen.dart:328:53 - undefined_identifier
+  error - Target of URI doesn't exist: 'reset_password_screen.dart' - lib\features\auth\presentation\screens\otp\otp_screen.dart:5:8 - uri_does_not_exist
+  error - The method 'ResetPasswordScreen' isn't defined for the type '_OTPScreenState' - lib\features\auth\presentation\screens\otp\otp_screen.dart:45:35 - undefined_method
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\otp\otp_screen.dart:80:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\registration\registration_screen.dart:84:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\reset_password\reset_password_screen.dart:83:41 - deprecated_member_use
+  error - Target of URI doesn't exist: '../../../../core/presentation/screens/developer_page.dart' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:2:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../../../../shared/theme/app_theme.dart' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:3:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: 'package:meal_house/features/mess_owner/mess_profile/dashboard_screen/dashboard_screen.dart' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:5:8 - uri_does_not_exist
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:50:24 - undefined_identifier
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:73:41 - deprecated_member_use
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:87:29 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:88:29 - undefined_identifier
+  error - Invalid constant value - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:112:28 - invalid_constant
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:112:28 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:134:36 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:147:38 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:154:57 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:167:36 - undefined_identifier
+  error - The name 'DeveloperPage' isn't a class - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:179:77 - creation_with_non_type
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:183:46 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:190:42 - undefined_identifier
+  error - The name 'DeveloperPage' isn't a class - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:212:77 - creation_with_non_type
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:218:40 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:226:44 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:230:54 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:243:36 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:258:31 - undefined_identifier
+  error - The name 'DashboardScreen' isn't a class - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:266:37 - creation_with_non_type
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:325:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:327:47 - deprecated_member_use
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:349:37 - undefined_identifier
+  error - Undefined name 'AppTheme' - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:357:20 - undefined_identifier
+   info - Unnecessary use of multiple underscores - lib\features\mess_owner\presentation\screens\menu_history\menu_history_screen.dart:257:43 - unnecessary_underscores
+warning - The value of the local variable 'icon' isn't used - lib\features\mess_owner\presentation\screens\mess_orders\order_details_screen\order_details_screen.dart:442:15 - unused_local_variable
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\cuisine_type_grid_widget.dart:134:30 - undefined_getter
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:125:50 - undefined_getter
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:129:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:137:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:141:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:145:27 - undefined_getter
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:191:63 - undefined_getter
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:204:50 - undefined_getter
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:208:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:216:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:220:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:224:27 - undefined_getter
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:266:50 - undefined_getter
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:270:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:278:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:282:50 - undefined_getter
+  error - The getter 'errorColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\mess_form_fields_widget.dart:286:27 - undefined_getter
+  error - The getter 'borderColor' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\step_indicator_widget.dart:27:29 - undefined_getter
+  error - The getter 'progressBackground' isn't defined for the type 'AppTheme' - lib\features\mess_owner\presentation\screens\mess_profile\mess_details_screen\widgets\step_indicator_widget.dart:64:41 - undefined_getter
+warning - The value of the field '_bgColor' isn't used - lib\features\mess_owner\presentation\screens\mess_profile\mess_location_screen\mess_location_screen.dart:16:22 - unused_field
+warning - The value of the field '_blueLightBg' isn't used - lib\features\mess_owner\presentation\screens\mess_profile\upload_mess_photos_screen\upload_mess_photos_screen.dart:16:22 - unused_field
+   info - Unnecessary instance of 'Container' - lib\features\mess_owner\presentation\screens\mess_profile\upload_mess_photos_screen\upload_mess_photos_screen.dart:201:20 - avoid_unnecessary_containers
+   info - The imported package 'fl_chart' isn't a dependency of the importing package - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:1:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:fl_chart/fl_chart.dart' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:1:8 - uri_does_not_exist
+  error - The method 'BarChart' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:195:24 - undefined_method
+  error - The method 'BarChartData' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:196:19 - undefined_method
+  error - Undefined name 'BarChartAlignment' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:197:32 - undefined_identifier
+  error - The method 'BarTouchData' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:200:35 - undefined_method
+  error - The method 'BarTouchTooltipData' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:202:41 - undefined_method
+  error - The method 'BarTooltipItem' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:220:34 - undefined_method
+  error - The name 'FlPointerExitEvent' isn't defined, so it can't be used in an 'is' expression - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:234:41 - type_test_with_undefined_name
+warning - Dead code - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:234:61 - dead_code
+  error - The method 'FlTitlesData' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:243:33 - undefined_method
+  error - The name 'AxisTitles' isn't a class - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:245:41 - creation_with_non_type
+  error - The method 'SideTitles' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:246:37 - undefined_method
+  error - The name 'AxisTitles' isn't a class - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:248:42 - creation_with_non_type
+  error - The method 'SideTitles' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:249:37 - undefined_method
+  error - The name 'AxisTitles' isn't a class - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:251:40 - creation_with_non_type
+  error - The method 'SideTitles' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:252:37 - undefined_method
+  error - The method 'AxisTitles' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:254:37 - undefined_method
+  error - The method 'SideTitles' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:255:37 - undefined_method
+  error - The method 'FlGridData' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:280:31 - undefined_method
+  error - The method 'FlLine' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:284:56 - undefined_method
+  error - The method 'FlBorderData' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:290:33 - undefined_method
+  error - The method 'BarChartGroupData' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:298:30 - undefined_method
+  error - The method 'BarChartRodData' isn't defined for the type '_EarningsTrendChartWidgetState' - lib\features\mess_owner\presentation\screens\revenue_reports\widgets\earnings_trend_chart_widget.dart:301:27 - undefined_method
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:463:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:548:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:600:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:654:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\order_meal\order_meal_screen.dart:233:33 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\order_meal\order_meal_screen.dart:233:37 - unnecessary_underscores
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:421:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:422:23 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:528:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:529:15 - deprecated_member_use
+   info - Statements in a while should be enclosed in a block - lib\features\order\presentation\screens\skip_meal\skip_meal_screen.dart:293:34 - curly_braces_in_flow_control_structures
+warning - The value of the local variable 'dotColor' isn't used - lib\features\order\presentation\screens\track_order\track_order_screen.dart:254:11 - unused_local_variable
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\active_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_ActiveOrderCardWidgetState' - lib\features\order\presentation\widgets\active_order_card_widget.dart:113:101 - undefined_method
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\cancelled_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_CancelledOrderCardWidgetState' - lib\features\order\presentation\widgets\cancelled_order_card_widget.dart:160:100 - undefined_method
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\completed_order_card_widget.dart:6:8 - unused_import
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\recently_completed_section_widget.dart:6:8 - unused_import
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_UpcomingOrderCardWidgetState' - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:104:104 - undefined_method
+
