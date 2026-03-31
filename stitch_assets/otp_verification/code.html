@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#ec5b13",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221610",
+                "charcoal": "#1a1a1a",
+              },
+              fontFamily: {
+                "display": ["Public Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display flex items-center justify-center min-h-screen p-4">
+<div class="max-w-md w-full bg-white dark:bg-zinc-900/50 p-8 rounded-xl shadow-sm border border-orange-100 dark:border-zinc-800">
+<!-- Back Arrow -->
+<button class="mb-8 p-2 -ml-2 hover:bg-orange-50 dark:hover:bg-zinc-800 rounded-full transition-colors duration-200 group">
+<span class="material-icons text-slate-900 dark:text-slate-100 group-hover:text-primary">arrow_back</span>
+</button>
+<!-- Title & Subtext -->
+<div class="mb-10">
+<h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3 tracking-tight">Verify OTP</h1>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                We've sent a 6-digit verification code to <span class="font-semibold text-slate-900 dark:text-slate-200">+1 (555) 000-1234</span>. Please enter it below to continue.
+            </p>
+</div>
+<!-- OTP Input Container -->
+<form class="space-y-8" onsubmit="return false;">
+<div class="flex justify-between gap-2 sm:gap-4">
+<input class="w-12 h-14 sm:w-14 sm:h-16 text-center text-xl font-bold rounded-lg border-2 border-orange-100 dark:border-zinc-800 bg-background-light dark:bg-zinc-900 text-slate-900 dark:text-slate-100 focus:border-primary focus:ring-0 focus:outline-none transition-all" maxlength="1" type="text" value="4"/>
+<input class="w-12 h-14 sm:w-14 sm:h-16 text-center text-xl font-bold rounded-lg border-2 border-orange-100 dark:border-zinc-800 bg-background-light dark:bg-zinc-900 text-slate-900 dark:text-slate-100 focus:border-primary focus:ring-0 focus:outline-none transition-all" maxlength="1" type="text" value="8"/>
+<input class="w-12 h-14 sm:w-14 sm:h-16 text-center text-xl font-bold rounded-lg border-2 border-orange-100 dark:border-zinc-800 bg-background-light dark:bg-zinc-900 text-slate-900 dark:text-slate-100 focus:border-primary focus:ring-0 focus:outline-none transition-all" maxlength="1" placeholder="·" type="text"/>
+<input class="w-12 h-14 sm:w-14 sm:h-16 text-center text-xl font-bold rounded-lg border-2 border-orange-100 dark:border-zinc-800 bg-background-light dark:bg-zinc-900 text-slate-900 dark:text-slate-100 focus:border-primary focus:ring-0 focus:outline-none transition-all" maxlength="1" placeholder="·" type="text"/>
+<input class="w-12 h-14 sm:w-14 sm:h-16 text-center text-xl font-bold rounded-lg border-2 border-orange-100 dark:border-zinc-800 bg-background-light dark:bg-zinc-900 text-slate-900 dark:text-slate-100 focus:border-primary focus:ring-0 focus:outline-none transition-all" maxlength="1" placeholder="·" type="text"/>
+<input class="w-12 h-14 sm:w-14 sm:h-16 text-center text-xl font-bold rounded-lg border-2 border-orange-100 dark:border-zinc-800 bg-background-light dark:bg-zinc-900 text-slate-900 dark:text-slate-100 focus:border-primary focus:ring-0 focus:outline-none transition-all" maxlength="1" placeholder="·" type="text"/>
+</div>
+<!-- Resend Link -->
+<div class="text-center">
+<p class="text-slate-500 dark:text-slate-400 text-sm">
+                    Didn't receive the code? 
+                    <button class="text-primary font-semibold hover:underline decoration-2 underline-offset-4 transition-all" type="button">
+                        Resend code
+                    </button>
+</p>
+</div>
+<!-- Primary Action Button -->
+<button class="w-full bg-charcoal dark:bg-primary py-4 px-6 rounded-lg text-white font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-black/10 flex items-center justify-center gap-2" type="submit">
+                Verify
+                <span class="material-icons text-lg">arrow_forward</span>
+</button>
+</form>
+<!-- Decorative Element -->
+<div class="mt-12 flex justify-center opacity-20">
+<div class="grid grid-cols-3 gap-8">
+<div class="w-1 h-1 bg-primary rounded-full"></div>
+<div class="w-1 h-1 bg-primary rounded-full"></div>
+<div class="w-1 h-1 bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+</body></html>

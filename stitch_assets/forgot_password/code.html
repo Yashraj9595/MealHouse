@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#221610", // Deep charcoal from theme config
+                        "accent": "#ec5b13", // Primary orange from theme config
+                        "background-light": "#FDFBF7", // Warm cream requested
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<button aria-label="Go back" class="text-primary dark:text-slate-100 flex size-12 shrink-0 items-center justify-center hover:bg-primary/5 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+</div>
+<!-- Content Container -->
+<div class="max-w-md w-full mx-auto px-6 py-8">
+<!-- Header Section -->
+<div class="mb-10">
+<h1 class="text-primary dark:text-slate-100 tracking-tight text-[32px] font-bold leading-tight pb-3">
+                    Forgot Password
+                </h1>
+<p class="text-primary/70 dark:text-slate-400 text-base font-normal leading-relaxed">
+                    Enter the email address associated with your account and we'll send you a link to reset your password.
+                </p>
+</div>
+<!-- Form Section -->
+<div class="space-y-6">
+<div class="flex flex-col gap-2">
+<label class="text-primary dark:text-slate-200 text-sm font-semibold uppercase tracking-wider ml-1">
+                        Email Address
+                    </label>
+<div class="relative">
+<input class="form-input flex w-full rounded-xl border-primary/20 bg-white/50 dark:bg-primary/10 dark:border-primary/40 focus:border-accent focus:ring-1 focus:ring-accent h-14 placeholder:text-primary/40 px-4 text-base font-normal transition-all" placeholder="hello@example.com" type="email" value=""/>
+</div>
+</div>
+<div class="pt-4">
+<button class="flex w-full cursor-pointer items-center justify-center rounded-xl h-14 px-5 bg-primary text-background-light dark:bg-accent dark:text-white text-base font-bold leading-normal tracking-wide shadow-lg hover:opacity-90 active:scale-[0.98] transition-all">
+<span class="truncate">Send Reset Link</span>
+</button>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="mt-20 flex justify-center">
+<div class="w-24 h-1 bg-primary/10 rounded-full"></div>
+</div>
+<!-- Footer/Help -->
+<div class="mt-8 text-center">
+<p class="text-sm text-primary/60 dark:text-slate-500">
+                    Remember your password? 
+                    <a class="text-accent font-semibold hover:underline decoration-2 underline-offset-4" href="#">Sign In</a>
+</p>
+</div>
+</div>
+<!-- Abstract Background Detail -->
+<div class="fixed -bottom-24 -right-24 w-64 h-64 bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="fixed -top-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+</div>
+</body></html>

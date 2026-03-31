@@ -1,0 +1,110 @@
+﻿Analyzing lib...                                                
+
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:15:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:20:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:25:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:30:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:35:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:40:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:45:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:50:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:55:9 - use_super_parameters
+   info - Parameters ''message', 'code', and 'details'' could be super parameters - lib\core\error\app_exceptions.dart:60:9 - use_super_parameters
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:150:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:152:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:154:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:156:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:158:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:160:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:162:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:164:12 - type_literal_in_constant_pattern
+   info - Use 'TypeName _' instead of a type literal - lib\core\error\app_exceptions.dart:166:12 - type_literal_in_constant_pattern
+warning - Unused import: 'package:flutter/material.dart' - lib\core\extensions\datetime_extensions.dart:1:8 - unused_import
+   info - Unnecessary 'this.' qualifier - lib\core\extensions\datetime_extensions.dart:125:26 - unnecessary_this
+   info - Unnecessary 'this.' qualifier - lib\core\extensions\datetime_extensions.dart:174:21 - unnecessary_this
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:42:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:44:13 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:53:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:54:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:61:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:62:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\network\api_client.dart:64:13 - avoid_print
+  error - Target of URI doesn't exist: 'package:meal_house/features/mess_owner/presentation/screens/dashboard/dashboard_screen.dart' - lib\core\presentation\screens\developer_page.dart:4:8 - uri_does_not_exist
+  error - The name 'DashboardScreen' isn't a class - lib\core\presentation\screens\developer_page.dart:49:21 - creation_with_non_type
+warning - Unused import: 'package:meal_house/core/constants/app_constants.dart' - lib\core\utils\helpers.dart:3:8 - unused_import
+warning - Unused import: 'package:flutter/material.dart' - lib\core\utils\validators.dart:1:8 - unused_import
+warning - Unused import: 'package:meal_house/core/constants/app_constants.dart' - lib\features\auth\data\services\auth_service.dart:4:8 - unused_import
+warning - The operand can't be 'null', so the condition is always 'true' - lib\features\auth\data\services\auth_service.dart:227:34 - unnecessary_null_comparison
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\auth\presentation\screens\welcome\welcome_screen.dart:73:41 - deprecated_member_use
+   info - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\location\location_permission_screen\location_permission_screen.dart:2:8 - unnecessary_import
+   info - Unnecessary use of multiple underscores - lib\features\location\location_permission_screen\widgets\permission_blob_widget.dart:14:20 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\location\location_permission_screen\widgets\permission_illustration_widget.dart:46:26 - unnecessary_underscores
+   info - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\location\location_selection_screen\location_selection_screen.dart:1:8 - unnecessary_import
+   info - 'scale' is deprecated and shouldn't be used. Use scaleByVector3, scaleByVector4, or scaleByDouble instead - lib\features\location\location_selection_screen\widgets\location_suggestions_widget.dart:174:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\location\location_selection_screen\widgets\location_suggestions_widget.dart:187:35 - deprecated_member_use
+   info - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\location\pickup_point_selection_screen\pickup_point_selection_screen.dart:1:8 - unnecessary_import
+  error - There's no constant named 'selected' in 'BadgeStatus' - lib\features\location\pickup_point_selection_screen\widgets\pickup_location_card_widget.dart:159:55 - undefined_enum_constant
+   info - Unnecessary use of multiple underscores - lib\features\mess_owner\presentation\screens\menu_history\menu_history_screen.dart:257:43 - unnecessary_underscores
+warning - The value of the local variable 'icon' isn't used - lib\features\mess_owner\presentation\screens\mess_orders\order_details_screen\order_details_screen.dart:442:15 - unused_local_variable
+warning - The value of the field '_bgColor' isn't used - lib\features\mess_owner\presentation\screens\mess_profile\mess_location_screen\mess_location_screen.dart:16:22 - unused_field
+warning - The value of the field '_blueLightBg' isn't used - lib\features\mess_owner\presentation\screens\mess_profile\upload_mess_photos_screen\upload_mess_photos_screen.dart:16:22 - unused_field
+   info - Unnecessary instance of 'Container' - lib\features\mess_owner\presentation\screens\mess_profile\upload_mess_photos_screen\upload_mess_photos_screen.dart:201:20 - avoid_unnecessary_containers
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\notifications\notifications_screen\widgets\notification_card_widget.dart:73:37 - deprecated_member_use
+   info - Unnecessary use of multiple underscores - lib\features\notifications\notifications_screen\widgets\notification_filter_widget.dart:30:31 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:463:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:548:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:600:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:654:26 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\order_meal\order_meal_screen.dart:233:33 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\order_meal\order_meal_screen.dart:233:37 - unnecessary_underscores
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:421:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:422:23 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:528:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:529:15 - deprecated_member_use
+   info - Statements in a while should be enclosed in a block - lib\features\order\presentation\screens\skip_meal\skip_meal_screen.dart:293:34 - curly_braces_in_flow_control_structures
+warning - The value of the local variable 'dotColor' isn't used - lib\features\order\presentation\screens\track_order\track_order_screen.dart:254:11 - unused_local_variable
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\active_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_ActiveOrderCardWidgetState' - lib\features\order\presentation\widgets\active_order_card_widget.dart:113:101 - undefined_method
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\cancelled_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_CancelledOrderCardWidgetState' - lib\features\order\presentation\widgets\cancelled_order_card_widget.dart:160:100 - undefined_method
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\completed_order_card_widget.dart:6:8 - unused_import
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\recently_completed_section_widget.dart:6:8 - unused_import
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_UpcomingOrderCardWidgetState' - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:104:104 - undefined_method
+   info - Unnecessary use of multiple underscores - lib\features\profile\presentation\screens\edit_profile_screen\edit_profile_screen.dart:137:39 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\profile\presentation\screens\edit_profile_screen\edit_profile_screen.dart:137:43 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\profile\presentation\screens\profile_screen\profile_screen.dart:147:35 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\profile\presentation\screens\profile_screen\profile_screen.dart:147:39 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\profile\presentation\screens\saved_locations_screen\saved_locations_screen.dart:334:33 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\profile\presentation\screens\saved_locations_screen\saved_locations_screen.dart:334:37 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\profile\presentation\screens\settings_screen\settings_screen.dart:108:39 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\profile\presentation\screens\settings_screen\settings_screen.dart:108:43 - unnecessary_underscores
+warning - Unused import: 'package:meal_house/core/theme/app_theme.dart' - lib\features\review_screen\review_submitted_screen\review_submitted_screen.dart:4:8 - unused_import
+   info - The import of 'package:flutter/material.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\user\home_screen\home_screen\home_screen.dart:1:8 - unnecessary_import
+   info - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\user\home_screen\home_screen\home_screen.dart:2:8 - unnecessary_import
+   info - The import of 'package:meal_house/core/router/app_routes.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\user\home_screen\home_screen\home_screen.dart:5:8 - unnecessary_import
+warning - The value of the field '_mapBgLight' isn't used - lib\features\user\home_screen\mess_near_you_screen\mess_near_you_screen.dart:25:22 - unused_field
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\breakfast_menu_screen\breakfast_menu_screen.dart:212:39 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\breakfast_menu_screen\breakfast_menu_screen.dart:212:43 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\breakfast_menu_screen\breakfast_menu_screen.dart:527:35 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\breakfast_menu_screen\breakfast_menu_screen.dart:527:39 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\dinner_menu_screen\dinner_menu_screen.dart:212:39 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\dinner_menu_screen\dinner_menu_screen.dart:212:43 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\dinner_menu_screen\dinner_menu_screen.dart:527:35 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\dinner_menu_screen\dinner_menu_screen.dart:527:39 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\dish_detail_screen\dish_detail_screen.dart:96:31 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\dish_detail_screen\dish_detail_screen.dart:96:35 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\lunch_menu_screen\lunch_menu_screen.dart:211:39 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\lunch_menu_screen\lunch_menu_screen.dart:211:43 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\lunch_menu_screen\lunch_menu_screen.dart:542:35 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\lunch_menu_screen\lunch_menu_screen.dart:542:39 - unnecessary_underscores
+   info - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\user\mess_details\restaurant_detail_screen\restaurant_detail_screen.dart:1:8 - unnecessary_import
+   info - The import of 'package:meal_house/core/router/app_routes.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\user\mess_details\restaurant_detail_screen\widgets\action_buttons_widget.dart:3:8 - unnecessary_import
+   info - The import of 'package:meal_house/core/router/app_routes.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\features\user\mess_details\restaurant_detail_screen\widgets\meal_slot_buttons_widget.dart:3:8 - unnecessary_import
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\weekly_menu_screen\weekly_menu_screen.dart:317:33 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\user\mess_details\weekly_menu_screen\weekly_menu_screen.dart:317:37 - unnecessary_underscores
+   info - The import of 'package:meal_house/core/router/app_routes.dart' is unnecessary because all of the used elements are also provided by the import of 'package:meal_house/core/app_export.dart' - lib\shared\widgets\custom_error_widget.dart:3:8 - unnecessary_import
+   info - Missing type annotation - lib\shared\widgets\custom_image_widget.dart:86:3 - strict_top_level_inference
+   info - Missing type annotation - lib\shared\widgets\custom_image_widget.dart:98:3 - strict_top_level_inference
+   info - Unnecessary use of multiple underscores - lib\shared\widgets\loading_skeleton_widget.dart:81:20 - unnecessary_underscores
+

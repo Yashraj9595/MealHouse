@@ -1,0 +1,24 @@
+$dir = "C:\Users\yashr\.gemini\antigravity\brain\82014a9f-368a-4870-89d1-078af65b383a\stitch_assets"
+New-Item -ItemType Directory -Force -Path $dir
+
+Write-Host "Downloading Screen 1..."
+curl.exe -L "https://lh3.googleusercontent.com/aida/AOfcidXCQrj5Gc5T16lvny2bhXPYQno3J_MoKJ_qMRH4rooQJQzVFn-tYMomWYdNSIQr5_uXel9O_LFzKzw00-oJ6sVWMWG7CygkMw_ur9c5LAMawLRORKROVbhlX7x1M_vnvM8VCNGsWOA5e_pyyLmSPjBJEe1UQpULHe5m6s3Tq5uPozuoMtHQlgI1R1VcYyuRbWN09tERdvRmqnDCNVDqlraZTjU9Jdg2LQaxGWz7SwiuidsDwj4Mxz722A" -o "$dir\screen1_menu_availability.png"
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ6Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpZCiVodG1sX2FmM2ZhNzdmZWNhYzQ0ZmQ4YWIxYWE2ZDZjMTI1NGU2EgsSBxCY2fCTygQYAZIBIgoKcHJvamVjdF9pZBIUQhIzODgyMjYwMjcxMjU2Njg3Mzc&filename=&opi=89354086" -o "$dir\screen1_menu_availability.html"
+
+Write-Host "Downloading Screen 2..."
+curl.exe -L "https://lh3.googleusercontent.com/aida/AOfcidXbM4F5we5c70JvMrnZ4xOtIYafR87ZYD93Tog67JCGYsA6XsfyaiA4Durxs7C2OYvoOoumN4yyp-62sm2tWmeRLQi33c008hFxQYLWXpBKbiY8NwQvZ2HMqKoFdHMlgBkNllnL42a_V-z5jj8z0KshXGXKYvGSqZbgkBIp7JByHd5U4Faq-s-7_p2TRhHhEwRY_3X6OTay4qlzdL1-7vsa8ZtVJLvDCpTxyhhxExJowiHvBBbLmruZdw" -o "$dir\screen2_sharma_mess_overview.png"
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ6Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpZCiVodG1sX2M3ZTEzNTM5YTBhYjQ2MmRhNDBhMGNlYjAzZTdhNGIxEgsSBxCY2fCTygQYAZIBIgoKcHJvamVjdF9pZBIUQhIzODgyMjYwMjcxMjU2Njg3Mzc&filename=&opi=89354086" -o "$dir\screen2_sharma_mess_overview.html"
+
+Write-Host "Downloading Screen 3..."
+curl.exe -L "https://lh3.googleusercontent.com/aida/AOfcidUOsybZfE2IuH7wnDvv5NHx_bfGCPjC21r0AkCdnHDTUDL_jJzGzcyC59pkWu6CIMu0bLAgQ7305Fl2MIkTP9-Xth7i9XCQtRoxHEhJN8BkvZpZufzDPOVVZ0l7DU_x0q5ML_J3sYILMn8pUFToeodYS66m_3TjZIQvqbfGGPF5uUro7zL-qFmPVR3Wquw0vGxlb4vMWGKdBPQBGWXB4-zMqZIh32UDldj1QNcxkQwzI16e2avlSxcR" -o "$dir\screen3_meal_time_menu_lunch.png"
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ6Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpZCiVodG1sX2Y4MDkwMzQzMGQ2MDQxMmFhOWY0M2ExZDU3YWM3NjJiEgsSBxCY2fCTygQYAZIBIgoKcHJvamVjdF9pZBIUQhIzODgyMjYwMjcxMjU2Njg3Mzc&filename=&opi=89354086" -o "$dir\screen3_meal_time_menu_lunch.html"
+
+Write-Host "Downloading Screen 4..."
+curl.exe -L "https://lh3.googleusercontent.com/aida/AOfcidUi9qm0fwYd_xXA4Srg8Qps2L7EP0XCZVjvTC2MnJ91YEn8O1tw7kjeuXv-jy_oc3lHa9ifs25D4XW0YsNbqHyF7u5sHdzLY93Jp_KI1SBOGfYELddT3euxHRLuP4_oFamTURzVOukUWUE5wPnfOykSjdlojfijM-lfKU2kO6BQi3wRfxnMyKJzqlxSVAvWyCIO_H6yLtY95cTCoB6AvGSHCM_J41yDn1wKiOMKn5KYDNtp2YzNgMd8" -o "$dir\screen4_refined_thali_detail.png"
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ6Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpZCiVodG1sXzAyYzI5NWRiMjJmODRmNmI4OWU1ZDNlNWU0NmFkYzEyEgsSBxCY2fCTygQYAZIBIgoKcHJvamVjdF9pZBIUQhIzODgyMjYwMjcxMjU2Njg3Mzc&filename=&opi=89354086" -o "$dir\screen4_refined_thali_detail.html"
+
+Write-Host "Downloading Screen 5..."
+curl.exe -L "https://lh3.googleusercontent.com/aida/AOfcidU7d-0lTs5WmbecQ_PXGicMC4YuLGtMlRCEmvldGzEit43NbmUpsmq3lBDHjn6uJIdJr4SlwUsn6XTPl_5I1niX2Sew3t-2AEbBEFO1e-mZBDucXGemSBJ1EJLxTKlARYAJQUEpKnP5QnSTSntN69yHioRszRHi7kmDXQqPiyvAtWUJKUSPNS3fN12zD6kIw32yeL554nCSBT5fpilTHCXTKfPfXMNQghztN68He31KjaazHPXlnHppVw" -o "$dir\screen5_weekly_menu_schedule.png"
+curl.exe -L "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ6Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpZCiVodG1sX2E3NjBmODliZjEzZTQ0MWI5ZGNjN2M3Mzg2ZjBkZDFiEgsSBxCY2fCTygQYAZIBIgoKcHJvamVjdF9pZBIUQhIzODgyMjYwMjcxMjU2Njg3Mzc&filename=&opi=89354086" -o "$dir\screen5_weekly_menu_schedule.html"
+
+Write-Host "Done!"

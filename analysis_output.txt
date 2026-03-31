@@ -1,0 +1,104 @@
+Analyzing order...                                              
+
+  error - Target of URI doesn't exist: '../domain/entities/order_status.dart' - lib\features\order\data\models\order_model.dart:1:8 - uri_does_not_exist
+  error - Undefined class 'OrderStatus' - lib\features\order\data\models\order_model.dart:12:9 - undefined_class
+  error - Undefined class 'OrderStatus' - lib\features\order\data\models\order_model.dart:68:10 - undefined_class
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:71:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:73:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:75:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:77:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:79:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:81:16 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\data\models\order_model.dart:83:16 - undefined_identifier
+  error - Target of URI doesn't exist: './widgets/active_order_card_widget.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:7:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: './widgets/cancelled_order_card_widget.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:8:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: './widgets/completed_order_card_widget.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:9:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: './widgets/orders_app_bar_widget.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:10:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: './widgets/orders_bottom_nav_widget.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:11:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: './widgets/orders_tab_bar_widget.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:12:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: './widgets/recently_completed_section_widget.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:13:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: './widgets/upcoming_order_card_widget.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:14:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../data/models/order_model.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:17:8 - uri_does_not_exist
+  error - Target of URI doesn't exist: '../domain/entities/order_status.dart' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:18:8 - uri_does_not_exist
+  error - The name 'OrderModel' isn't a type, so it can't be used as a type argument - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:233:8 - non_type_as_type_argument
+  error - The name 'OrderModel' isn't a type, so it can't be used as a type argument - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:234:8 - non_type_as_type_argument
+  error - The name 'OrderModel' isn't a type, so it can't be used as a type argument - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:235:8 - non_type_as_type_argument
+  error - The name 'OrderModel' isn't a type, so it can't be used as a type argument - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:236:8 - non_type_as_type_argument
+  error - Undefined name 'OrderModel' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:259:46 - undefined_identifier
+  error - Undefined name 'OrderModel' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:260:50 - undefined_identifier
+  error - Undefined name 'OrderModel' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:261:52 - undefined_identifier
+  error - Undefined name 'OrderModel' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:262:52 - undefined_identifier
+  error - Undefined class 'OrderModel' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:276:23 - undefined_class
+  error - The property 'id' can't be unconditionally accessed because the receiver can be 'null' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:315:52 - unchecked_use_of_nullable_value
+  error - Undefined class 'OrderModel' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:351:23 - undefined_class
+  error - Undefined name 'OrderStatus' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:352:25 - undefined_identifier
+  error - Undefined name 'OrderStatus' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:354:32 - undefined_identifier
+  error - Undefined class 'OrderModel' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:359:19 - undefined_class
+  error - The name 'OrderModel' isn't a type, so it can't be used as a type argument - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:375:8 - non_type_as_type_argument
+  error - The name 'OrderModel' isn't a type, so it can't be used as a type argument - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:375:44 - non_type_as_type_argument
+  error - The property 'mealName' can't be unconditionally accessed because the receiver can be 'null' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:381:17 - unchecked_use_of_nullable_value
+  error - The property 'providerName' can't be unconditionally accessed because the receiver can be 'null' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:382:17 - unchecked_use_of_nullable_value
+  error - The method 'OrdersAppBarWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:406:13 - undefined_method
+  error - The method 'OrdersTabBarWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:426:13 - undefined_method
+  error - The method 'OrdersBottomNavWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:448:28 - undefined_method
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:463:26 - unnecessary_underscores
+  error - The method 'ActiveOrderCardWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:507:37 - undefined_method
+  error - The method 'ActiveOrderCardWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:519:26 - undefined_method
+  error - The method 'RecentlyCompletedSectionWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:528:15 - undefined_method
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:548:26 - unnecessary_underscores
+  error - The method 'UpcomingOrderCardWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:574:37 - undefined_method
+  error - The method 'UpcomingOrderCardWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:586:24 - undefined_method
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:600:26 - unnecessary_underscores
+  error - The method 'CompletedOrderCardWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:626:37 - undefined_method
+  error - The method 'CompletedOrderCardWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:639:24 - undefined_method
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:654:26 - unnecessary_underscores
+  error - The method 'CancelledOrderCardWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:678:37 - undefined_method
+  error - The method 'CancelledOrderCardWidget' isn't defined for the type '_MyOrdersScreenState' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:690:24 - undefined_method
+  error - The name 'OrderModel' isn't a type, so it can't be used as a type argument - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:700:10 - non_type_as_type_argument
+  error - Undefined class 'OrderModel' - lib\features\order\presentation\screens\my_orders\my_orders_screen.dart:701:30 - undefined_class
+  error - Invalid constant value - lib\features\order\presentation\screens\order_history\order_history_screen.dart:99:51 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\screens\order_history\order_history_screen.dart:112:49 - invalid_constant
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\order_history\order_history_screen.dart:305:40 - undefined_getter
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\order_history\order_history_screen.dart:317:42 - undefined_getter
+  error - Invalid constant value - lib\features\order\presentation\screens\order_history\order_history_screen.dart:400:32 - invalid_constant
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\order_history\order_history_screen.dart:453:47 - undefined_getter
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\order_meal\order_meal_screen.dart:233:33 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\order\presentation\screens\order_meal\order_meal_screen.dart:233:37 - unnecessary_underscores
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:421:23 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:422:23 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:528:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\features\order\presentation\screens\order_summary\order_summary_screen.dart:529:15 - deprecated_member_use
+   info - Statements in a while should be enclosed in a block - lib\features\order\presentation\screens\skip_meal\skip_meal_screen.dart:293:34 - curly_braces_in_flow_control_structures
+  error - Invalid constant value - lib\features\order\presentation\screens\track_order\track_order_screen.dart:63:20 - invalid_constant
+warning - The value of the local variable 'dotColor' isn't used - lib\features\order\presentation\screens\track_order\track_order_screen.dart:254:11 - unused_local_variable
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:56:51 - invalid_constant
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:129:33 - undefined_getter
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:196:30 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:303:34 - invalid_constant
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:411:29 - undefined_getter
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:525:28 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:620:56 - invalid_constant
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:700:40 - undefined_getter
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\screens\upcoming_orders\upcoming_orders_screen.dart:712:42 - undefined_getter
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\active_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_ActiveOrderCardWidgetState' - lib\features\order\presentation\widgets\active_order_card_widget.dart:113:101 - undefined_method
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\active_order_card_widget.dart:292:29 - undefined_getter
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\cancelled_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_CancelledOrderCardWidgetState' - lib\features\order\presentation\widgets\cancelled_order_card_widget.dart:160:100 - undefined_method
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\completed_order_card_widget.dart:6:8 - unused_import
+  error - Invalid constant value - lib\features\order\presentation\widgets\completed_order_card_widget.dart:157:38 - invalid_constant
+  error - The getter 'primaryLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\completed_order_card_widget.dart:183:39 - undefined_getter
+  error - Invalid constant value - lib\features\order\presentation\widgets\orders_app_bar_widget.dart:215:26 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\widgets\orders_app_bar_widget.dart:249:61 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\widgets\orders_app_bar_widget.dart:280:24 - invalid_constant
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\orders_bottom_nav_widget.dart:152:34 - undefined_getter
+  error - The getter 'navActive' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\orders_bottom_nav_widget.dart:165:34 - undefined_getter
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\recently_completed_section_widget.dart:6:8 - unused_import
+  error - Invalid constant value - lib\features\order\presentation\widgets\recently_completed_section_widget.dart:176:26 - invalid_constant
+  error - The getter 'successLight' isn't defined for the type 'AppTheme' - lib\features\order\presentation\widgets\recently_completed_section_widget.dart:176:35 - undefined_getter
+warning - Unused import: '../../domain/entities/order_status.dart' - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:7:8 - unused_import
+  error - The method '_mapOrderStatusToBadgeStatus' isn't defined for the type '_UpcomingOrderCardWidgetState' - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:104:104 - undefined_method
+  error - Invalid constant value - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:143:40 - invalid_constant
+  error - Invalid constant value - lib\features\order\presentation\widgets\upcoming_order_card_widget.dart:193:32 - invalid_constant
+
+100 issues found. (ran in 3.7s)

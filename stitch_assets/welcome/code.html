@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;family=Lexend:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#ec5b13",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221610",
+              },
+              fontFamily: {
+                "display": ["Lexend", "Public Sans", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<!-- Main Container -->
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Full-bleed Hero Section -->
+<div class="relative h-[60vh] w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Gourmet delicious food platter with vibrant vegetables and grilled meat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBODvVUEpacze2j_Q5C5h2ZTosZdG7N2KpBoPJn4tK0hLEgJlrYnypMB74K-OgrObqvzQivzeWmsZ2kcjYf6jQTTzjKphLlJPWYm48Kw15sYO9pwVY1yB_S7OhtkW2sP1ofGQwmfnTrRqaQrPiCUAy5gpOukLUeUJjQ9sjNUUaX-UO2R6XQawC1LzCiv8e5bPV8jgIjAa9HuadDHifhDhwB-sGf8yuA7fozgVJ_L77ChHMYn-fEOw2I1_9ljbO545RJ_yd8J8g_Ww");'></div>
+<!-- Overlay Gradient for text readability if needed, though here we transition to white -->
+<div class="absolute inset-0 bg-gradient-to-t from-background-light via-transparent to-transparent dark:from-background-dark"></div>
+</div>
+<!-- Content Section -->
+<div class="flex flex-col flex-1 px-6 pb-12 -mt-16 relative z-10 bg-background-light dark:bg-background-dark rounded-t-[2.5rem]">
+<!-- Welcome Content -->
+<div class="pt-12 pb-8 text-center max-w-xl mx-auto">
+<div class="flex justify-center mb-6">
+<div class="w-12 h-1.5 bg-primary/20 rounded-full"></div>
+</div>
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-4xl md:text-5xl font-bold leading-[1.15] mb-4">
+                    Enjoy Instant <br/>
+<span class="text-primary">Delivery &amp; Payment</span>
+</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg font-normal leading-relaxed px-4">
+                    Delicious meals from your favorite mess, delivered fresh and fast to your doorstep. Experience premium dining at home.
+                </p>
+</div>
+<!-- Action Area -->
+<div class="flex flex-col items-center gap-6 mt-auto">
+<button class="w-full max-w-md bg-primary hover:bg-primary/90 text-white text-lg font-bold py-4 px-8 rounded-full shadow-lg shadow-primary/25 transition-all active:scale-95 flex items-center justify-center gap-2">
+<span>Get Started</span>
+<span class="material-symbols-outlined text-2xl">arrow_forward</span>
+</button>
+<a class="group flex items-center gap-1 text-slate-500 dark:text-slate-400 text-sm font-medium transition-colors hover:text-primary" href="#">
+                    Already have an account? 
+                    <span class="text-primary font-bold group-hover:underline decoration-2 underline-offset-4">Log in</span>
+</a>
+</div>
+<!-- Subtle Decorative Elements -->
+<div class="mt-12 flex justify-center gap-4 opacity-30">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Premium Quality</span>
+</div>
+<div class="w-1 h-1 bg-slate-400 rounded-full self-center"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">speed</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Fast Delivery</span>
+</div>
+</div>
+</div>
+</div>
+</body></html>
